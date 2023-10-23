@@ -13,6 +13,7 @@ function App() {
         todoList={todoList}
         setTodoList={setTodoList}
       ></Form>
+      <Todo></Todo>
     </div>
   );
 }
