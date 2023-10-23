@@ -14,3 +14,11 @@ body {
     margin: auto;
     margin-top: 20px;
 }
+.todoInput {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    font-size: 1.5em;
+    text-align: center;
+    height: 50px;
+}
