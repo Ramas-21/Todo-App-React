@@ -40,6 +40,12 @@ body {
 }
 .todoName {
     font-family: sans-serif;
-    text-align: center;
 }
-
+.deleteButton {
+    border: none;
+    height: 50px;
+    background-color: tomato;
+    width: 100px;
+    border-radius: 2px;
+    color: white;
+}
