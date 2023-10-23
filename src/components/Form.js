@@ -4,7 +4,7 @@ const Form = () => {
         <div className={styles.todoForm}>
             <form>
                 <input placeholder="Add todo item" className={styles.todoInput}></input>
-                <button>Add</button>
+                <button className={styles.todoButton}>Add</button>
             </form>
         </div>
     )
