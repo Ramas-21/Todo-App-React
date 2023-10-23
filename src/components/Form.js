@@ -3,11 +3,16 @@ const Form = ({todo, setTodo, todoList, setTodoList}) => {
     const handleChange = (event) =>{
         setTodo(event.target.value);
     }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        setTodoList([...todoList, todo]);
+    }
     return(
         <div className={styles.todoForm}>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input value={todo} onChange={handleChange} placeholder="Add todo item" className={styles.todoInput}></input>
-                <button className={styles.todoButton}>Add</button>
+                <button type="submit" className={styles.todoButton}>Add</button>
             </form>
         </div>
     )
