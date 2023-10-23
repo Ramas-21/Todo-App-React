@@ -2,8 +2,10 @@ import styles from '../style.module.css';
 const Todo = () => {
     return(
         <div>
-            <div><h3>Todo Item</h3></div>
-            <button>Done</button>
+            <div className={styles.todoItem}>
+                <h3 className={styles.todoName}>Todo Item</h3>
+                <button className={styles.deleteButton}>Done</button>
+            </div>
         </div>
     )
 }
